@@ -1,0 +1,114 @@
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .logo h2 {
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    color: #ff4081;
+  }
+  
+  /* Burger menu icon */
+  .menu-icon {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu */
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #333;
+    padding: 60px 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0); /* Slide in from the left */
+    z-index: 1000;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: row; /* Menu appears as a row on larger devices */
+    gap: 20px;
+    background-color: transparent;
+    position: static;
+    height: auto;
+    transform: translateX(0);
+  }
+  
+  /* Overlay to darken the background when menu is open */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 999; /* Just below the navbar */
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none; /* Hide menu on mobile unless burger is clicked */
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    /* For larger devices */
+    .nav-menu {
+      display: flex; /* Always display menu on larger devices */
+      gap: 20px;
+      position: static;
+      background-color: transparent;
+    }
+  
+    .menu-icon {
+      display: none; /* Hide burger icon on larger devices */
+    }
+  
+    .overlay {
+      display: none; /* No overlay needed on larger screens */
+    }
+  }
+  
