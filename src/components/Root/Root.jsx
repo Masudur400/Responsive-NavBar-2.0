@@ -9,6 +9,7 @@ const Root = () => {
                 <Link to='/navbarOne' className='px-3 py-1 bg-red-300'>Navbar One</Link>
                 <Link to='/navbarTwo' className='px-3 py-1 bg-red-300'>Navbar Two</Link>
                 <Link to='/navbarcustomize' className='px-3 py-1 bg-red-300'>Navbar Two Customize</Link>
+                <Link to='/navbarThree' className='px-3 py-1 bg-red-300'>Navbar Three</Link>
                  
             </div>
         <div className='my-10'>

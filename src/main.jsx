@@ -11,6 +11,7 @@ import Root from './components/Root/Root.jsx';
 import NavbarOne from './components/NavbarOne/NavbarOne.jsx';
 import NavbarTwo from './components/NavbarTwo/NavbarTwo.jsx'; 
 import NavbarCustomize from './components/NavbarCustomize/NavbarCustomize.jsx';
+import NavbarThree from './components/NavbarThree/NavbarThree.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path:'/navbarcustomize',
         element:  <NavbarCustomize></NavbarCustomize>
+      },
+      {
+        path:'/navbarThree',
+        element: <NavbarThree></NavbarThree>
       },
     ]
   },
