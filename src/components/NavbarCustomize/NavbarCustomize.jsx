@@ -54,6 +54,7 @@ const NavbarTwoCustomize = () => {
               style={{
                 maxHeight: 'calc(100vh - 64px)',
                 scrollbarWidth: 'thin', /* For Firefox */
+                // scrollbarWidth: 'none', /* For Firefox */
                 msOverflowStyle: 'none'  /* For Internet Explorer and Edge */
               }}
             >
