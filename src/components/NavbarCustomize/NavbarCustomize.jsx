@@ -13,7 +13,8 @@ const NavbarTwoCustomize = () => {
     <>
       {/* Navbar */}
       <nav className="flex justify-between items-center bg-gray-800 text-white fixed w-full z-10">
-        <div className="container mx-auto flex items-center justify-between p-2 lg:p-4">
+        <div className='container mx-auto flex items-center justify-between p-2'>
+        <div className="">
           <div className="flex gap-5 lg:gap-10 justify-center items-center">
             {/* Burger Icon */}
             <div onClick={handleClick}>
@@ -108,6 +109,7 @@ const NavbarTwoCustomize = () => {
           <div>
             <button className="bg-red-500 px-3 py-1 rounded-md btn-sm text-sm">LogOut</button>
           </div>
+        </div>
         </div>
       </nav>
     </>
