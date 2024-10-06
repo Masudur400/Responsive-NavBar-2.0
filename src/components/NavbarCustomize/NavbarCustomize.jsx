@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { AiOutlineClose } from 'react-icons/ai';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { FiMenu } from 'react-icons/fi';
 import { LiaTimesSolid } from 'react-icons/lia';
 import { MdOutlineMenu } from 'react-icons/md';
+import { SlMenu } from 'react-icons/sl';
 
 const NavbarTwoCustomize = () => {
   const [click, setClick] = useState(false);
@@ -19,9 +22,9 @@ const NavbarTwoCustomize = () => {
             {/* Burger Icon */}
             <div onClick={handleClick}>
               {click ? (
-                <LiaTimesSolid className="text-xl lg:text-2xl cursor-pointer" />
+                <AiOutlineClose className="text-xl lg:text-3xl cursor-pointer" />
               ) : (
-                <MdOutlineMenu className="text-2xl lg:text-3xl cursor-pointer" />
+                < SlMenu className="text-xl lg:text-3xl cursor-pointer" />
               )}
             </div>
             <div className="lg:text-2xl font-bold">
