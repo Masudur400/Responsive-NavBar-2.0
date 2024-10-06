@@ -38,8 +38,8 @@ const NavbarTwoCustomize = () => {
             <div className="sticky top-0 bg-gray-900 p-4 border-b border-gray-700">
               <div className="text-2xl font-bold flex justify-between items-center">
                 <h2>MyWebsite</h2>
-                <a onClick={closeMenu} className="hover:text-pink-500 cursor-pointer">
-                  X
+                <a onClick={closeMenu} className="hover:text-pink-500 cursor-pointer border-2">
+                <LiaTimesSolid className="text-xl lg:text-2xl cursor-pointer " />
                 </a>
               </div>
             </div>
